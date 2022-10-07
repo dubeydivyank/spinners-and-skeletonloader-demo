@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="loader-container">
+      <span class="loader-a"></span>
+      <span class="loader-b"></span>
+      <span class="loader-c"></span>
+      <span class="loader-d"></span>
+      <span class="loader-e"></span>
+      <span class="loader-f"></span>
+      <span class="loader-g"></span>
+      <span class="loader-h"></span>
+      <span class="loader-i"></span>
+      <span class="loader-j"></span>
+      <span class="loader-k"></span>
+      <span class="loader-l"></span>
+      <span class="loader-m"></span>
+      <span class="loader-n"></span>
+      <span class="loader-o"></span>
+      <span class="loader-p"></span>
+    </div>
+    <div class="tab">
+      <button
+        id="spinner-tab"
+        class="tablinks"
+        onclick="openTab(event, 'Spinners')"
+      >
+        Spinners
+      </button>
+      <!-- <button class="tablinks" onclick="openTab(event, 'Div-Spinners')">
+        Div-Spinners
+      </button> -->
+      <button
+        id="skeleton-tab"
+        class="tablinks"
+        onclick="openTab(event, 'Skeleton-Loader')"
+      >
+        Skeleton-Loader
+      </button>
+    </div>
+
+    <!---------------- SPINNERS ---------------------->
+    <div id="Spinners" class="tabcontent">
+      <div>
+        <button class="spinner-button" id="loader-a">a</button>
+        <button class="spinner-button" id="loader-b">b</button>
+        <button class="spinner-button" id="loader-c">c</button>
+        <button class="spinner-button" id="loader-d">d</button>
+        <button class="spinner-button" id="loader-e">e</button>
+        <button class="spinner-button" id="loader-f">f</button>
+        <button class="spinner-button" id="loader-g">g</button>
+        <button class="spinner-button" id="loader-h">h</button>
+        <button class="spinner-button" id="loader-i">i</button>
+        <button class="spinner-button" id="loader-j">j</button>
+        <button class="spinner-button" id="loader-k">k</button>
+        <button class="spinner-button" id="loader-l">l</button>
+        <button class="spinner-button" id="loader-m">m</button>
+        <button class="spinner-button" id="loader-n">n</button>
+        <button class="spinner-button" id="loader-o">o</button>
+        <button class="spinner-button" id="loader-p">p</button>
+      </div>
+
+      <div id="content">
+        <h1>One morning, when Gregor Samsa woke from troubled dreams.</h1>
+        <p>
+          One morning, when Gregor Samsa woke from troubled dreams, he found
+          himself transformed in his bed into a horrible vermin. He lay on his
+          armour-like back, and if he lifted his head a little he could see his
+          brown belly, slightly domed and divided by arches into stiff sections.
+          The bedding was hardly able to cover <strong>strong</strong> it and
+          seemed ready to slide off any moment. His many legs, pitifully thin
+          compared with the size of the rest of him,
+          <a class="external ext" href="#">link</a> waved about helplessly as he
+          looked. "What's happened to me? " he thought. It wasn't a dream. His
+          room, a proper human room although a little too small, lay peacefully
+          between its four familiar walls.
+        </p>
+        <h1>One morning, when Gregor Samsa woke from troubled dreams.</h1>
+        <h2>The bedding was hardly able to cover it.</h2>
+        <p>
+          It showed a lady fitted out with a fur hat and fur boa who sat
+          upright, raising a heavy fur muff that covered the whole of her lower
+          arm towards the viewer.
+        </p>
+        <h2>The bedding was hardly able to cover it.</h2>
+        <p>
+          It showed a lady fitted out with a fur hat and fur boa who sat
+          upright, raising a heavy fur muff that covered the whole of her lower
+          arm towards the viewer.
+        </p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetuer.</li>
+          <li>Aenean commodo ligula eget dolor.</li>
+          <li>Aenean massa cum sociis natoque penatibus.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-------------- DIV_SPINNERS -------------------->
+    <!-- <div id="Div-Spinners" class="tabcontent">
+      <h3>Paris</h3>
+      <p>Paris is the capital of France.</p>
+    </div> -->
+
+    <!--------------- SKELETON LOADER ---------------->
+    <div id="skeleton-container">
+      <div class="grid"></div>
+
+      <template id="card-template">
+        <div class="card">
+          <div class="header">
+            <img
+              class="header-img skeleton"
+              src="https://source.unsplash.com/100x100/?nature"
+            />
+            <div class="title" data-title>
+              <div class="skeleton skeleton-text"></div>
+              <div class="skeleton skeleton-text"></div>
+            </div>
+          </div>
+          <div data-body>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+            <div class="skeleton skeleton-text"></div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
